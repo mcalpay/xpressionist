@@ -1,4 +1,4 @@
-
+//Eye
 function Eye(xy) {
 	this.xy = xy;
 	this.lookFront();

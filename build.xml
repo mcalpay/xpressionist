@@ -13,7 +13,7 @@
         <concat destfile="build/xpressionist.js">
             <fileset dir="src/main/js/" includes="*.js"/>
         </concat>
-        <delete dir="build" includes="*.js" excludes="xpressionist.js"/>
+        <delete dir="build" includes="*.js" excludes="xpressionist.js,*.html"/>
     </target>
 
 </project>

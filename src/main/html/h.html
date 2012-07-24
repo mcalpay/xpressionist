@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homrium</title>
+</head>
+<body>
+<canvas id="c" width="600" height="450"/>
+
+<script src="xpressionist.js"></script>
+<script>
+    var cvs = document.getElementById("c");
+    var ctx = cvs.getContext("2d");
+
+    var f = new Face({x:10, y:10, w:30, h:45});
+    var m = new MPlayer();
+    m.addPlay(new APlay(f.blink(), 40, true))
+
+    f = new Face({x:50, y:10, w:30, h:45});
+    m.addPlay(new APlay(f.smile(),1,true))
+
+    f = new Face({x:100, y:10, w:30, h:45});
+    m.addPlay(new APlay(f.sad(),1,true))
+
+    f = new Face({x:150, y:10, w:30, h:45});
+    m.addPlay(new APlay(f.angry(), 1, true))
+
+    f = new Face({x:200, y:10, w:30, h:45});
+    m.addPlay(new APlay(f.talk(), 10, true))
+
+    f = new Face({x:250, y:10, w:30, h:45});
+    m.addPlay(new APlay(f.tango(), 10, true))
+
+    f = new Face({x:300, y:10, w:30, h:45});
+    m.addPlay(new APlay(f.grin(), 20, true))
+
+    f = new Face({x:350, y:10, w:30, h:45});
+    m.addPlay(new APlay(f.closeOneEye(0), 1, true))
+
+    f = new Face({x:400, y:10, w:30, h:45});
+    m.addPlay(new APlay(f.blinkOneEye(1), 50, true))
+
+    m.start(10, ctx);
+</script>
+</body>
+</html>
+

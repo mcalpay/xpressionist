@@ -1,4 +1,4 @@
-
+//Mouth
 function Mouth(xy) {
 	this.xy = xy;
 	this.normal();

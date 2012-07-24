@@ -1,4 +1,4 @@
-
+//Eyes
 function Eyes(left) {
 	this.left = left;
 	this.right = new Eye({x:left.xy.x + left.xy.w*2, y:left.xy.y, w:left.xy.w, h:left.xy.h, c:left.xy.c});

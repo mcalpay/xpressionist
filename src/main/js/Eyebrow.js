@@ -1,4 +1,4 @@
-
+//Eyebrow
 function Eyebrow(xy) {
 	this.xy = xy;
 	this.normal();

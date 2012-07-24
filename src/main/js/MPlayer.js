@@ -1,4 +1,4 @@
-
+//MPlayer
 function MPlayer() {
 	this.list = [];
 }	

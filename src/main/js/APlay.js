@@ -1,9 +1,9 @@
-
+//APlay
 function APlay(ray, cycleTime, loop) {
 	this.ray = ray;
 	this.cycleTime = cycleTime;
 	for(var i = 0; i < this.ray.length; i ++) {
-		this.ray[i].frametime = Math.floor(this.ray[i].dur * cycleTime);
+		this.ray[i].frametime = Math.ceil(this.ray[i].dur * cycleTime);
 		this.ray[i].playtime = this.ray[i].frametime;
 	}
 	

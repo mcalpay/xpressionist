@@ -17,6 +17,10 @@
                 <filtering>true</filtering>
             </resource>
             <resource>
+                <directory>src/main/html</directory>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
                 <directory>src/test/js</directory>
                 <filtering>true</filtering>
             </resource>
