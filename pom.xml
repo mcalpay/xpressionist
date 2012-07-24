@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.climbinglabs.xpressionist</groupId>
+    <artifactId>xpressionist</artifactId>
+    <packaging>pom</packaging>
+    <name>xpressionist</name>
+    <version>1.0.0</version>
+    <url>http://www.climbinglabs.org/xpressionist/</url>
+    <inceptionYear>2012</inceptionYear>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/js</directory>
+                <filtering>true</filtering>
+            </resource>
+            <resource>
+                <directory>src/test/js</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
+
+    <dependencies>
+    </dependencies>
+
+    <repositories>
+    </repositories>
+
+    <dependencyManagement>
+    </dependencyManagement>
+
+    <distributionManagement>
+    </distributionManagement>
+
+    <properties>
+    </properties>
+</project>

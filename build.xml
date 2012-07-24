@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="xpressionist" basedir="." default="build">
+
+    <target name="build">
+        <antcall target="preprocess"></antcall>
+        <antcall target="postprocess"></antcall>
+    </target>
+
+    <target name="preprocess">
+    </target>
+
+    <target name="postprocess">
+        <concat destfile="build/xpressionist.js">
+            <fileset dir="src/main/js/" includes="*.js"/>
+        </concat>
+        <delete dir="build" includes="*.js" excludes="xpressionist.js"/>
+    </target>
+
+</project>
